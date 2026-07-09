@@ -50,3 +50,21 @@ img{
     
     border: 5px solid black;
 }
+footer{
+    background-color: rgb(111, 4, 102);
+    color:black;
+    text-align: center;
+    padding: 5px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+.about-table{
+    margin: auto;
+    text-align: left;
+    border-spacing: 8px;
+    font-size: 18px;
+}
+
+.about-table td{
+    padding: 5px 10px;
+}
