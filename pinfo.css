@@ -1,0 +1,52 @@
+
+body{
+    background-color: rgb(225, 156, 210);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    h1{
+        color: rgb(230, 23, 171);
+        
+        margin-top: 30px;
+    }
+    section{
+        h2{
+            color: brown;
+        }
+    }
+}
+nav{
+    background-color: rgb(112, 154, 173);
+    display: inline-block;
+    padding:12px 25px;
+    border-radius: 25px;
+    margin-top: 20px;
+    
+}
+
+
+nav a{
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    color: rgb(9, 95, 19);
+}
+nav a:hover{
+    color: rgb(106, 19, 237);
+}
+section{
+    margin-top: 40px
+    
+}
+ul{
+    width:fit-content;
+    margin:0 auto;
+}
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px auto;
+    display: block;
+    
+    border: 5px solid black;
+}
