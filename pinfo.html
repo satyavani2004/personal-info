@@ -6,22 +6,34 @@
     <title>My Profile</title>
     <link rel="stylesheet" href="pinfo.css">
     
+
+    
 </head>
 <body>
-    <h1>My Personal Information</h1>
-    
-    <img src="satya-photo.jpg" alt="my profile picture">
-    <h2>Hello,I'am Satya👋</h2>
-    <p>Python Full Stack Learner</p>
+    <section id="satya">
     <nav>
-        
-        <a href="#about me">ABOUT ME</a>
+        <a href="#satya">SATYA</a>
+        <a href="#about">ABOUT ME</a>
         <a href="#education">EDUCATION</a>
         <a href="#skills">SKILLS</a>
+        <a href="#project">PROJECT</a>
         <a href="#contact">CONTACT</a>
         <a href="index.html">back to home</a>
 
     </nav>
+    </section>
+    
+    <section id="home">
+        <h1>My Personal Information</h1>
+    
+    
+        
+    <img src="satya-photo.jpg" alt="my profile picture">
+    
+    <h2>Hello,I'am Satya👋</h2>
+    <p>Python Full Stack Learner</p>
+    
+    </section>
     <section id="about">
     <h2>ABOUT ME</h2>
 
@@ -56,29 +68,128 @@
 
     
     
-    <section id="education">
-        <h2>EDUCATION</h2>
-        <p>B.Tech-Electronics and Communication Engineering</p>
-        <p>Swarnandhra College of Engineering Aand Technology</p>
-        <p> Passed in 2025 </p>
-
-
-    </section>
     
-    <section id="skills">
-        <h2>SKILLS</h2>
-        <ul>
-            <li>Python</li>
-            <li>SQL</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-    </section>
+    <section id="education">
+    <h2>EDUCATION</h2>
+
+    <table class="education-table">
+        <tr>
+            <th>Qualification</th>
+            <th>College/School</th>
+            <th>Board/University</th>
+            <th>Year</th>
+            <th>CGPA/Percentage</th>
+        </tr>
+
+        <tr>
+            <td>B.Tech (ECE)</td>
+            <td>Swarnandhra College of Engineering and Technology</td>
+            <td>JNTUK</td>
+            <td>2025</td>
+            <td>7.8 CGPA</td>
+        </tr>
+
+        <tr>
+            <td>Diploma (ECE)</td>
+            <td>BVC Institute of Technology and Science</td>
+            <td>APSBTET</td>
+            <td>2022</td>
+            <td>80%</td>
+        </tr>
+
+        <tr>
+            <td>SSC (10th)</td>
+            <td>ZPPGH School</td>
+            <td>Board of Secondary Education, AP</td>
+            <td>2019</td>
+            <td>9.7 CGPA</td>
+        </tr>
+    </table>
+</section>
+<section id="skills">
+    <h2>SKILLS</h2>
+
+    <div class="skill-box">
+        <h3>🐍 Python</h3>
+        <p>Good knowledge of Python programming and OOP concepts.</p>
+    </div>
+
+    <div class="skill-box">
+        <h3>🗄 SQL</h3>
+        <p>Good understanding of SQL queries and MySQL database.</p>
+    </div>
+
+    <div class="skill-box">
+        <h3>🌐 HTML</h3>
+        <p>Create semantic and well-structured web pages.</p>
+    </div>
+
+    <div class="skill-box">
+        <h3>🎨 CSS</h3>
+        <p>Design responsive and attractive web pages.</p>
+    </div>
+
+    <div class="skill-box">
+        <h3>⚡ JavaScript</h3>
+        <p>Basic knowledge to create interactive web pages.</p>
+    </div>
+
+    <div class="skill-box">
+        <h3>💬 Communication</h3>
+        <p>Good communication and teamwork skills.</p>
+    </div>
+
+    <div class="skill-box">
+        <h3>🧠 Logical Thinking</h3>
+        <p>Able to analyze problems and find logical solutions.</p>
+    </div>
+
+    <div class="skill-box">
+        <h3>🚀 Quick Learner</h3>
+        <p>Learn new technologies quickly and adapt easily.</p>
+    </div>
+</section>
+<section id="project">
+
+<h2>PROJECT</h2>
+
+<div class="project-container">
+
+    <div class="project-images">
+        <img src="pi.jpg" alt="raspberry-pi">
+        <img src="kit.jpg" alt="kit-diagram">
+        <img src="connection.png" alt="connection">
+    </div>
+
+    <div class="project-content">
+
+        <h3>REAL TIME FACE RECOGNITION BASED ATTENDANCE SYSTEM USING PYCHARM COMMUNITY ON RASPBERRY-Pi </h3>
+        <p>Developed this project to create attendance monitoring system based on real time facial recognition Using Web
+ camera and raspberry Pi. Thismodel combines a cameramodule that records an input image and an Algorithm for
+ detecting faces in input images and ch</p>
+        
+
+        <p>
+            <b>Technologies:</b> Python, Raspberry Pi, OpenCV, SQL, HTML, CSS
+        </p>
+
+        <p>
+            <b>Role:</b> Developed the attendance system, integrated the camera,
+            and stored attendance records in the database.
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+
     <section id="contact">
+        
         <h2>CONTACT</h2>
         <p>✉️Email:jhansisatya3@gmail.com</p>
         <p>📞Phone:7569967148</p>
+        <button onclick="contactMessage()">Contact Me</button>
 
     </section>
     <script src="pinfo.js"></script>

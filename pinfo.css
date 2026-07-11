@@ -1,26 +1,38 @@
-
+html{
+    scroll-behavior: smooth;
+}
 body{
-    background-color: rgb(225, 156, 210);
-    text-align: center;
-    font-family: Arial, sans-serif;
-    h1{
-        color: rgb(230, 23, 171);
-        
-        margin-top: 30px;
-    }
-    section{
-        h2{
-            color: brown;
-        }
-    }
+    margin:0;
+    font-family:Arial, sans-serif;
+    text-align:center;
+}
+
+h1{
+    color:rgb(3,58,74);
+    font-size:50px;
+    margin:0;
+    padding-top:20px;
+    margin-bottom:20px;
+}
+
+section{
+    padding:40px 35px;
+}
+
+section h2{
+    color:brown;
 }
 nav{
-    background-color: rgb(112, 154, 173);
-    display: inline-block;
-    padding:12px 25px;
-    border-radius: 25px;
-    margin-top: 20px;
-    
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    background:rgb(112,154,173);
+    padding:15px 0;
+    z-index:1000;
 }
 
 
@@ -33,26 +45,24 @@ nav a{
 nav a:hover{
     color: rgb(104, 7, 249);
 }
-section{
-    margin-top: 40px
-    
-}
 ul{
     width:fit-content;
     margin:0 auto;
 }
 img{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
     margin: 10px auto;
     display: block;
+    margin-top: 30px;
     
-    border: 5px solid black;
+    border: 3px solid black;
 }
 footer{
-    background-color: rgb(111, 4, 102);
+    background-color: rgb(123, 211, 235);
     color:black;
+    font-size: 20px;
     text-align: center;
     padding: 5px;
     margin-top: 40px;
@@ -67,4 +77,164 @@ footer{
 
 .about-table td{
     padding: 5px 10px;
+}
+
+#home{
+    background-image:url(background.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    font-size: 25px;
+
+    padding-top:80px;
+    padding-bottom:60px;
+}
+#about{
+    background-image: url(image.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    padding: 80px 30px;
+    font-size: 25px;
+}
+tr{
+    font-size: 25px;
+}
+
+#education{
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    padding: 80px 30px;
+    font-size: 25px;
+
+    background-position: center;
+}
+#skills{
+    background-image:url(image.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    padding:80px 30px;
+    text-align:center;
+    font-size: 25px;
+}
+
+#project{
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    padding: 80px 30px;
+    font-size: 25px;
+
+    background-position: center;
+}
+h3{
+    font-size: 25px;
+}
+p{
+    font-size: 25px;
+}
+#contact{
+    background-image: url(image.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    padding: 80px 30px;
+
+    background-position: center;
+    font-size: 25px;
+}
+img:hover{
+    transform:scale(1.1);
+    transition:0.4s;
+}
+.education-table{
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.education-table th,
+.education-table td{
+    border: 1px solid black;
+    padding: 12px;
+    text-align: center;
+}
+
+.education-table th{
+    background-color: #5fa8d3;
+    color: white;
+}
+
+.education-table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+
+.skill-box{
+    width:70%;
+    margin:20px auto;
+    background:rgb(240, 233, 233);
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.2);
+    text-align:left;
+}
+
+.skill-box h3{
+    color:#0b6e6e;
+    margin-bottom:10px;
+}
+
+.skill-box p{
+    margin:0;
+    color:#444;
+}
+.project-container{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:50px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.project-images{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.project-images img{
+    width:220px;
+    height:160px;
+    border-radius:15px;
+    border:2px solid black;
+}
+
+.project-content{
+    width:500px;
+    text-align:left;
+}
+
+.project-content h3{
+    color:brown;
+}
+
+.project-content p{
+    font-size:18px;
+    line-height:1.6;
+}
+button{
+    background-color: rgb(76, 23, 83);
+    color: aliceblue;
+    padding: 10px 25px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor:pointer;
+}
+button:hover{
+    background-color: rgb(237, 93, 101);
 }
