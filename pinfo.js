@@ -12,7 +12,7 @@ function showDateTime(){
 }
 
 showDateTime();
-let hour = new Date().getHours();
+let hour=new Date().getHours();
 
 if(hour < 12){
     document.getElementById("greeting").innerHTML = "🌞 Good Morning!";
@@ -23,6 +23,6 @@ else if(hour < 18){
 else{
     document.getElementById("greeting").innerHTML = "🌙 Good Evening!";
 }
-function downloadResume(){
-    window.open("resume.pdf");
+function downloadResume() {
+    window.open("resume.pdf", "_blank");
 }
